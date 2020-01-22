@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Linux," />
+  <meta name="keywords" content="Git," />
 
 
 
@@ -94,16 +94,16 @@
 
 
 
-<meta name="description" content="Linux无处不在。">
+<meta name="description" content="有用的Git命令">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux命令">
-<meta property="og:url" content="http://yoursite.com/2018/11/24/Linux-command/index.html">
+<meta property="og:title" content="Git使用">
+<meta property="og:url" content="http://yoursite.com/2020/01/22/git-use/index.html">
 <meta property="og:site_name" content="WenQiang&#39;s Note">
-<meta property="og:description" content="Linux无处不在。">
-<meta property="article:published_time" content="2018-11-23T16:00:00.000Z">
-<meta property="article:modified_time" content="2019-12-28T08:12:55.402Z">
+<meta property="og:description" content="有用的Git命令">
+<meta property="article:published_time" content="2020-01-21T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-01-22T08:55:57.876Z">
 <meta property="article:author" content="WenQiang">
-<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
 
 
@@ -133,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/24/Linux-command/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/01/22/git-use/"/>
 
 
 
 
 
-  <title>Linux命令 | WenQiang's Note</title>
+  <title>Git使用 | WenQiang's Note</title>
   
 
 
@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/24/Linux-command/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/22/git-use/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="WenQiang">
@@ -279,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux命令</h1>
+          <h1 class="post-title" itemprop="name headline">Git使用</h1>
         
 
         <div class="post-meta">
@@ -291,8 +291,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-24T00:00:00+08:00">
-                2018-11-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-22T00:00:00+08:00">
+                2020-01-22
               </time>
             
 
@@ -314,8 +314,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
+                  <a href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index">
+                    <span itemprop="name">开发工具</span>
                   </a>
                 </span>
 
@@ -351,35 +351,18 @@
       
 
       
-        <p>Linux无处不在。</p>
+        <p>有用的Git命令</p>
 <a id="more"></a>
-<h3 id="tree"><a href="#tree" class="headerlink" title="tree"></a>tree</h3><p>用途：以树状图列出目录的内容<br>语法：<code>tree [-adDfiLnpstu] [目录]</code></p>
-<blockquote>
-<p>-a：显示所有文件和目录，包括隐藏文件<br> -d：显示目录名称而非内容。<br> -D：列出文件或目录的更改时间。<br> -f：在每个文件或目录之前，显示完整的相对路径名称。<br> -i：不以阶梯状列出文件或目录名称。<br> -L　n：显示0到n层目录的内容<br> -n：不在文件和目录清单加上色彩。<br> -p：列出权限标示。<br> -s：列出文件或目录大小。<br> -t：用文件和目录的更改时间排序。<br> -u：列出文件或目录的拥有者名称，没有对应的名称时，则显示用户识别码。</p>
-</blockquote>
-<p>实例：<br>　　<code>tree -adL 2</code>　　显示0-2层目录的所有目录</p>
-<hr>
-<h3 id="du"><a href="#du" class="headerlink" title="du"></a>du</h3><p>用途：列出文件容量<br>语法：<code>du [-ahskm] 文件或目录名称</code></p>
-<blockquote>
-<p>-a：列出所有的文件与目录容量，默认仅统计目录容量<br>  -h：以易读的容量格式 (G/M) 显示<br>  -k：以<strong>KBytes</strong>为单位列出容量显示（默认）<br>  -m：以<strong>MBytes</strong>为单位列出容量显示<br>  -s：列出总量，不列出每个各别的目录占用容量<br>  -S：列出目录容量，不包括子目录下的总计</p>
-</blockquote>
-<p>实例：<br>　　<code>du -aSh</code>　　显示所有文件容量，不包括子目录</p>
-<hr>
-<h3 id="mount"><a href="#mount" class="headerlink" title="mount"></a>mount</h3><p>用途：将文件系统挂载到系统<br>语法：<code>mount [-t vfstype] device 挂载点</code></p>
-<blockquote>
-<p>-t　vfstype：指出要挂载文件系统的类型，一般不指定，mount会自动选择正确的类型<br>  device：要挂载的的设备</p>
-</blockquote>
-<p>使用这个命令是因为总是折腾Linux系统，需要时不时的进EFI分区删除一下引导。</p>
-<p>实例：<br>　　<code>mount /dev/sdc2 /home/zhang/tmp</code>　　挂载sdc磁盘的第二块分区到tmp</p>
-<hr>
-<h3 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a>mkdir</h3><blockquote>
-<p>原本以为这个命令不需要学习，可以今天创建多层目录时：<code>mddir src/main</code>，提示错误。于是查了一下工具书。具体看下面。</p>
-</blockquote>
-<p>用途：创建文件夹<br>语法：<code>mkdir [-pm] 目录名称</code></p>
-<blockquote>
-<p>-p：创建多层目录<br>  -m：设定目录属性，否则使用默认属性。例如：<code>mkdir -m 711 test</code></p>
-</blockquote>
-<p>实例：<br>　　<code>mkdir -p src/main/java</code>　　创建建多层目录，src/main/java</p>
+
+<h4 id="撤销提交-—-reset"><a href="#撤销提交-—-reset" class="headerlink" title="撤销提交 — reset"></a>撤销提交 — reset</h4><p>有三种模式: </p>
+<p><strong>mixed</strong>( 默认 ) : 重置所有git操作，包括 commit、add  </p>
+<p><strong>soft</strong> : 只重置commit操作，用于修改commit内容</p>
+<p><strong>hard</strong> : 重置所有操作，包括git操作和文件修改  </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --mixed [commit version]  [file]</span><br></pre></td></tr></table></figure>
+
+<p>举例: <code>git reset --hard HEAD</code> 将仓库重置到最新的提交，包括文件修改也重置</p>
+<h4 id="移除版本控制-—-rm"><a href="#移除版本控制-—-rm" class="headerlink" title="移除版本控制 — rm"></a>移除版本控制 — rm</h4><p><code>git rm --cached [file]</code> 移除版本控制，但保留本地文件</p>
+<p><code>git rm [file]</code> 移除版本控制，并移除本地文件  </p>
 
       
     </div>
@@ -397,7 +380,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag"># Linux</a>
+            <a href="/tags/Git/" rel="tag"># Git</a>
           
         </div>
       
@@ -410,8 +393,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/18/java-environment-variables/" rel="next" title="Java学习笔记：Java环境变量">
-                <i class="fa fa-chevron-left"></i> Java学习笔记：Java环境变量
+              <a href="/2019/05/27/android-get-mac-address/" rel="next" title="Android获取mac地址">
+                <i class="fa fa-chevron-left"></i> Android获取mac地址
               </a>
             
           </div>
@@ -419,10 +402,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/12/flutter-hello-world/" rel="prev" title="Hello Flutter">
-                Hello Flutter <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -569,7 +548,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#tree"><span class="nav-number">1.</span> <span class="nav-text">tree</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#du"><span class="nav-number">2.</span> <span class="nav-text">du</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mount"><span class="nav-number">3.</span> <span class="nav-text">mount</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mkdir"><span class="nav-number">4.</span> <span class="nav-text">mkdir</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#撤销提交-—-reset"><span class="nav-number">1.</span> <span class="nav-text">撤销提交 — reset</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#移除版本控制-—-rm"><span class="nav-number">2.</span> <span class="nav-text">移除版本控制 — rm</span></a></li></ol></div>
             
 
           </div>
